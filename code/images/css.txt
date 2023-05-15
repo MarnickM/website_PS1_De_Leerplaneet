@@ -1,0 +1,6 @@
+#platform {
+    display: inherit;
+    position: absolute;
+    bottom: 90px;
+    right: 290px;
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+    background-image: url('../images/bg_prestaties');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    left: 675px;
+    top: 80px;
+    z-index: 1;
+    font-size: 45px;
+    color: white;
+}
+
+#screen {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-content-container {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container {
+    height: 100px;
+    margin: 13px 1em;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 1 20%;
+    transition: transform .2s;
+
+}
+
+.container:hover {
+    border-radius: 5%;
+    transform: scale(1.08);
+}
+
+
+@media (max-width: 500px) {
+    .main-content-container {
+        padding: 8px;
+    }
+
+    .container {
+        flex: 0 1 15%;
+    }
+}
+
+.image-caption {
+    background: ;
+    margin: 0;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 5px solid #9cd2f0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #246ea2;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.unlocked {
+    filter: grayscale(0%);
+}
+
+.locked {
+    filter: grayscale(100%);
+}
+
+#progress {
+    position: absolute;
+    left: 23%;
+    top: 17%;
+    color: white;
+}
+
+
+#page1 {
+    display: flex;
+
+}
+
+#page2 {
+    display: none;
+}
+
+#page3 {
+    display: none;
+}
+
+#arrow {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    left: 73%;
+    top: 45%;
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#arrow:hover, #arrow2:hover, #arrow3:hover, #arrow4:hover {
+
+    transform: scale(1.25);
+}
+#arrow2:hover, #arrow4:hover {
+    transform: rotate(180deg);
+}
+
+#arrow2 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    left: 22%;
+    top: 45%;
+    display: none;
+    transform: rotate(180deg);
+}
+
+#arrow3 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    left: 73%;
+    top: 45%;
+    display: none;
+}
+
+#arrow4 {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    left: 22%;
+    top: 45%;
+    display: none;
+     transform: rotate(180deg);
+
+}
+
+.trop {
+    padding-left: 45px;
+}
+

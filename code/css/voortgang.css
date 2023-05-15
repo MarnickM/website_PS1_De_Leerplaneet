@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+}
+body {
+    background-image: url(../images/images/bgvoortgang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+}
+
+.container {
+    width: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.bold {
+    font-weight: bold;
+}
+.btn {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 0;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: #246ea2;
+    border: 5px solid #9cd2f0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    transform: translate(-80%,-80%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transfrom 0.4s;
+    z-index: 3;
+}
+.svg {
+    background-color: white;
+}
+.open-popup {
+    visibility: visible;
+    top: 250px;
+    transform: translate(-80%,-80%) scale(1);
+    transition: 0.4s;
+}
+.popup img {
+    widows: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup svg {
+    widows: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+#platform {
+    display: inherit;
+    position: absolute;
+    top: 200px;
+    right: 290px;
+}
+
+#boat {
+    display: inherit;
+    position: absolute;
+    top: 425px;
+    cursor: pointer;
+    animation: boat 80s linear infinite;
+}
+
+#cloud {
+    display: inherit;
+    position: absolute;
+    top: 80px;
+    animation: cloud 50s linear infinite;
+}
+
+#cloud2 {
+    display: inherit;
+    position: absolute;
+    top: 95px;
+    animation: cloud2 75s linear infinite;
+}
+
+#cloud3 {
+    display: inherit;
+    position: absolute;
+    top: 120px;
+    animation: cloud3 65s linear infinite;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateX(110vw);
+    }
+
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        transform: translateX(180vw);
+    }
+
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes cloud3 {
+    0% {
+        transform: translateX(140vw);
+    }
+
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes boat {
+    0% {
+        transform: translateX(-50vw);
+    }
+
+    100% {
+        transform: translateX(120vw);
+    }
+}
+

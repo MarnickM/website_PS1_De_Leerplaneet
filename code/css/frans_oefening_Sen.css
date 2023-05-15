@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Barlow, sans-serif;
+    /* background: linear-gradient(#141e30, #243b55); */
+    background-color: #191c3d;
+    background-image: url(../images/bgspace1.jpg);
+    /*Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=cartoon%20galaxy&position=0&from_view=keyword&track=ais">Freepik</a>*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.frenchform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: rgba(51, 161, 245, 0.8);
+    color: #fff;
+    border: 5px solid rgba(255, 255, 255, .8);
+    border-radius: 15px;
+}
+
+.frenchform h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.frenchform .verbform {
+    position: relative;
+}
+
+.frenchform .verbform input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #b3e9f6;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.frenchform .verbform label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #bceaf8;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.frenchform .verbform input:focus ~ label,
+.frenchform .verbform input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.frenchform verbform a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: green;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+
+}
+
+.frenchform a span {
+    position: absolute;
+    display: block;
+}
+
+button {
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 18px;
+    transition-duration: .9s;
+    min-width: 160px;
+    text-align: center;
+    height: 47px;
+    pointer-events: auto;
+    border: 5px solid #9cd2f0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #246ea2;
+}
+
+button:hover {
+    border: 5px solid #fff;
+}
+
+
+#next {
+    visibility: hidden;
+}
+
+#nummer {
+    display: none;
+}

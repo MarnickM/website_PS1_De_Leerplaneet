@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap%27');
+
+
+html {
+    height: 100%;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Barlow, sans-serif;
+    /* /
+     background: linear-gradient(#141e30, #243b55);
+    background-image: url(../images/bgspace1.jpg);
+    /Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=cartoon%20galaxy&position=0&from_view=keyword&track=ais%22%3EFreepik</a>*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.frenchform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*groote form*/
+    width: 1200px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: rgba(51, 161, 245, 0.8);
+    color: #fff;
+    border: 5px solid rgba(255, 255, 255, .8);
+    border-radius: 15px;
+}
+
+.frenchform h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.frenchform a span {
+    position: absolute;
+    display: block;
+}
+
+button {
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 18px;
+    transition-duration: .9s;
+    min-width: 160px;
+    text-align: center;
+    height: 47px;
+    pointer-events: auto;
+    border: 5px solid #9cd2f0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #246ea2;
+    
+}
+
+button:hover {
+    border: 5px solid #fff;
+ 
+}
+
+
+
+
+#next {
+    visibility: hidden;
+}
+
+#nummer {
+    display: none;
+}
+
+img{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+div.flags img{
+        border: 5px white;
+    border-style: double;
+    border-radius: 10px;
+}
+
+.flags{
+    text-align: center;
+}
+
+.claw{
+        text-align: center;
+        margin-bottom: 125px;
+}
+
+
+.moveflag1 {
+  position: relative;
+  animation-name: moveflag1;
+  animation-duration: 6s;
+  animation-delay: 4s;
+    
+    /*gaat niet terug naar originele positie*/
+      animation-fill-mode: forwards;
+
+}
+
+.moveclaw1{
+     position: relative;
+  animation-name: moveclaw1;
+  animation-duration: 10s;
+    animation-delay: 0s;
+
+}
+
+.moveflag2 {
+  position: relative;
+  animation-name: moveflag2;
+  animation-duration: 6s;
+  animation-delay: 4s;
+    
+    /*gaat niet terug naar originele positie*/
+      animation-fill-mode: forwards;
+
+}
+
+.moveclaw2{
+     position: relative;
+  animation-name: moveclaw2;
+  animation-duration: 10s;
+    animation-delay: 0s;
+
+}
+
+.moveflag3 {
+  position: relative;
+  animation-name: moveflag3;
+  animation-duration: 6s;
+  animation-delay: 4s;
+    
+    /*gaat niet terug naar originele positie*/
+      animation-fill-mode: forwards;
+
+}
+
+.moveclaw3{
+     position: relative;
+  animation-name: moveclaw3;
+  animation-duration: 10s;
+    animation-delay: 0s;
+
+}
+
+#flag1{
+    
+}
+
+@keyframes moveflag1 {
+ 0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, -200px);
+  }
+  66% {
+    transform: translate(-200px, -200px);
+  }
+    100%{
+     transform: translate(-200px, 0px);    
+    }
+}
+
+
+@keyframes moveclaw1 {
+  0%   {right:0px; top:0px;}
+  20%  {right:200px; top:0px;}
+  40%  { right:200px; top:200px;}
+  60%  { right:200px; top:0px;}
+  80% { right:400px; top:0px;}
+  90% { right:400px; top:0px;}
+  100% { right:0px;}
+}
+
+
+@keyframes moveflag2 {
+ 0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, -200px);
+  }
+  66% {
+    transform: translate(-400px, -200px);
+  }
+    100%{
+     transform: translate(-400px, 0px);    
+    }
+}
+
+
+@keyframes moveclaw2 {
+  0%   {right:0px; top:0px;}
+  40%  { right:0px; top:200px;}
+  60%  { right:0px; top:0px;}
+  80% { right:400px; top:0px;}
+  90% { right:400px; top:0px;}
+  100% { right:0px;}
+}
+
+@keyframes moveflag3 {
+ 0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, -200px);
+  }
+  66% {
+    transform: translate(-600px, -200px);
+  }
+    100%{
+     transform: translate(-600px, 0px);    
+    }
+}
+
+@keyframes moveclaw3 {
+  0%   {right:0px; top:0px;}
+  20%  {right:-200px; top:0px;}
+  40%  { right:-200px; top:200px;}
+  60%  { right:-200px; top:0px;}
+  80% { right:400px; top:0px;}
+  90% { right:400px; top:0px;}
+  100% { right:0px;}
+}
+
+button{
+    text-align: center;
+    background-color: red;
+    position: relative;
+    left:925px;
+}

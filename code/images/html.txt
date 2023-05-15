@@ -1,0 +1,15 @@
+    <div>
+        <img id="cloud" src="images/clouds.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="cloud2" src="images/clouds2.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="cloud3" src="images/clouds3.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="boat" src="images/bootje.png" alt="Boat">
+    </div>
+    <div>
+        <img id="platform" src="images/rocketvoortgang.png" alt="Rocket platform">
+    </div>

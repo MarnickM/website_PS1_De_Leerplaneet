@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>De Leerplaneet</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <audio id="audio" src="images/ufosound.mp3"></audio>
+    <div>
+        <img id="ufo" src="images/ufogif.gif" alt="UFO" width="140" height="63" onclick="play();">
+    </div>
+    <div>
+        <img id="cloud" src="images/clouds.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="cloud2" src="images/clouds2.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="cloud3" src="images/clouds3.png" alt="Clouds">
+    </div>
+    <div>
+        <img id="rover" src="images/rover.gif" alt="Space rover">
+    </div>
+    <div>
+        <img id="flag" src="images/flags/belgium.png" alt="flag" width="100" height="">
+    </div>
+    <p class="info">Klik op de bewegende elementen!</p>
+    <div class="loginform">
+        <h1><img src="images/logo.png" alt="De Leerplaneet"></h1>
+        <form method="post" class="login">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Gebruikersnaam</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="wachtwoord" required>
+                <label>Wachtwoord</label>
+                <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
+            <div class="pass">Wachtwoord vergeten ?</div>
+            <input type="button" value="Login" onclick="location.href='homePagina.html'">
+            <div class="signup">
+                <p>Nog geen account? <a href="#" class="register-link">Registreer!</a></p>
+            </div>
+        </form>
+        <form method="post" class="register hide">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Gebruikersnaam</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="wachtwoord" required>
+                <label>Wachtwoord</label>
+                <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="wachtwoord" required>
+                <label>Herhaal wachtwoord</label>
+                <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
+            <input type="button" value="Registreer" onclick="location.href='homePagina.html'">
+            <div class="signup">
+                <p>Heb je al een account? <a href="#" class="login-link">Log in!</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

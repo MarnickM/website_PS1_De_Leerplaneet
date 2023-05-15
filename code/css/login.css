@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Barlow, sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+.info {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.loginform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    background-color: rgba(51, 161, 245, 0.8);
+    color: #fff;
+    border: 5px solid rgba(255, 255, 255, .8);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.loginform h1 {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid rgba(255, 255, 255, .8);
+    margin-bottom: 20px;
+}
+
+.loginform form {
+    padding: 0 20px;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #fff;
+    margin: 20px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: #fff;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="button"] {
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    border: 5px solid #9cd2f0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #246ea2;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+input[type="button"]:hover {
+    border: 5px solid #fff;
+}
+
+label[for="email"]:invalid {
+    color: red;
+}
+
+.signup {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Barlow;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ufo {
+    display: none;
+}
+
+#rover {
+    display: none;
+}
+
+#cloud,
+#cloud2,
+#cloud3,
+#flag,
+.info {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+    #ufo {
+        display: inherit;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        animation: ufo 10s linear infinite;
+    }
+
+    #rover {
+        display: inherit;
+        position: absolute;
+        bottom: 60px;
+        cursor: pointer;
+        animation: rover 40s linear infinite;
+    }
+
+    #cloud {
+        display: inherit;
+        position: absolute;
+        top: 80px;
+        animation: cloud 50s linear infinite;
+    }
+
+    #cloud2 {
+        display: inherit;
+        position: absolute;
+        top: 95px;
+        animation: cloud2 75s linear infinite;
+    }
+
+    #cloud3 {
+        display: inherit;
+        position: absolute;
+        top: 120px;
+        animation: cloud3 65s linear infinite;
+    }
+
+    #flag {
+        display: inherit;
+        position: absolute;
+        bottom: 277px;
+        left: 70px;
+        animation: flag 40s linear infinite;
+    }
+
+    .info {
+        display: inherit;
+    }
+
+    @keyframes ufo {
+        0% {
+            transform: translateX(-50vw) translateY(150px);
+        }
+
+        100% {
+            transform: translateX(150vw);
+        }
+    }
+
+    @keyframes rover {
+        0% {
+            transform: translateX(120vw);
+        }
+
+        100% {
+            transform: translateX(-50vw);
+        }
+    }
+
+    @keyframes cloud {
+        0% {
+            transform: translateX(110vw);
+        }
+
+        100% {
+            transform: translateX(-50vw);
+        }
+    }
+
+    @keyframes cloud2 {
+        0% {
+            transform: translateX(180vw);
+        }
+
+        100% {
+            transform: translateX(-50vw);
+        }
+    }
+
+    @keyframes cloud3 {
+        0% {
+            transform: translateX(140vw);
+        }
+
+        100% {
+            transform: translateX(-50vw);
+        }
+    }
+
+    @keyframes flag {
+        0% {
+            transform: translateX(120vw);
+        }
+
+        100% {
+            transform: translateX(-50vw);
+        }
+    }
+}
